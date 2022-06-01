@@ -1,4 +1,4 @@
-package org.example.builder;
+package org.example.creational.builder;
 
 public class House {
     public House(int rooms, boolean kitchen, int restroom, boolean painted) {

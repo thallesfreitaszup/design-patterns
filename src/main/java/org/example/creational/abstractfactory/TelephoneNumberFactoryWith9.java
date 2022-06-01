@@ -1,8 +1,8 @@
-package org.example.abstractfactory;
+package org.example.creational.abstractfactory;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class TelephoneNumberFactoryWithout9 implements TelephoneNumberFactory {
+public class TelephoneNumberFactoryWith9 implements TelephoneNumberFactory {
 
     @Override
     public TelephoneNumber createNumberSP() {
@@ -10,8 +10,10 @@ public class TelephoneNumberFactoryWithout9 implements TelephoneNumberFactory {
     }
 
     private String generateNumber() {
+        var preFix = '9';
         char[] chars = new char[] { '0','1','2','3','4','5','6','7','8','9'};
         var numberString = new StringBuilder();
+        numberString.append(preFix);
         var sizeNumber = 8;
         for(int i =0; i < sizeNumber; i++) {
             var numberIndex = ThreadLocalRandom.current().nextInt(0, sizeNumber);
@@ -22,6 +24,6 @@ public class TelephoneNumberFactoryWithout9 implements TelephoneNumberFactory {
 
     @Override
     public TelephoneNumber createNumberDF() {
-        return  new TelephoneNumberDF(generateNumber());
+        return new TelephoneNumberDF(generateNumber());
     }
 }

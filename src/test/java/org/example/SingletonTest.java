@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.singleton.Singleton;
+import org.example.creational.singleton.Singleton;
 import org.junit.Assert;
 import org.junit.Test;
 

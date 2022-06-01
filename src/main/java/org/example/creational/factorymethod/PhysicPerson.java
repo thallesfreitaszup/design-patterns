@@ -1,4 +1,4 @@
-package org.example.factorymethod;
+package org.example.creational.factorymethod;
 
 public class PhysicPerson implements Person {
 
