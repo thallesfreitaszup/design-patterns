@@ -4,7 +4,7 @@ import org.example.creational.builder.House;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class BuilderTest {
+public class AdapterTest {
 
 
     @Test

@@ -1,4 +1,4 @@
-package org.example.singleton;
+package org.example.creational.singleton;
 
 public class Singleton {
     private static Singleton instance;

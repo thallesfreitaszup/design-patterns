@@ -1,4 +1,4 @@
-package org.example.abstractfactory;
+package org.example.creational.abstractfactory;
 
 public  class TelephoneNumberSP implements TelephoneNumber {
     private final String value;
